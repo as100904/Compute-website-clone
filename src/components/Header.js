@@ -24,7 +24,7 @@ function Header() {
     slides[index].classList.add('active')
   }
 
-    // setInterval(nextSlide , 6000)
+  setInterval(nextSlide , 6000)
   
   return (
     <header className='header' id='head'>
