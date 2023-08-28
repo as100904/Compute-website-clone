@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200&family=Play&family=Vollkorn:ital@0;1&display=swap');
+
+#contact{
+    width: 100%;
+    height: 85vh;
+    padding: 50px 20px 20px 20px;
+    margin-bottom: 30px;
+    /* border: 2px solid red; */
+    
+}
+
+.contact-container{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50%;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    /* border: 2px solid red; */
+}
+
+.contactlabel{
+    color: #333;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+    /* border: 2px solid red; */
+}
+
+.txtbox{
+    display: block;
+    width: 100%;
+    height: 38px;
+    border: 1px solid #ccc;
+    padding-left: 8px;
+    margin-bottom: 10px;
+    font-family: Montserrat , sans-serif;
+    font-size: 12px;
+    color: #555;
+    letter-spacing: -1px;
+}
+
+.textarea{
+    height: 50px;
+    overflow: auto;
+}
+
+.txtbox:focus{
+    outline-color: rgb(86, 217, 247);
+}
+
+@media screen and (max-width: 768px){
+    .contact-container{
+        width: 90%;
+    }
+}

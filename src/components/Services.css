@@ -1,0 +1,165 @@
+.inforow{
+    position: relative;
+    width: 100%;
+    height: 620px;
+    /* border: 2px solid red;    */
+    padding: 20px 20px 0px 20px; 
+    display: flex;
+    /* background-color: aquamarine; */
+    gap: 20px;
+}
+.col1{
+    position: relative;
+    width: 50%;
+    height: 100%;
+    background-size: cover;
+    background-position-x: 65%;
+    background-image: url(https://daks2k3a4ib2z.cloudfront.net/5527a015715879bc5767ece2/55290b76b9c6422c42122a30_desk2.jpeg);
+    /* border: 2px solid red; */
+}
+
+.col2{
+    background-color: whitesmoke;
+    position: relative;
+    width: 50%;
+    height: 100%;
+    /* border: 2px solid red; */
+}
+
+.servicetextbox{
+    text-align: center;    
+    min-height: 600px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 150px;
+}
+
+.infotiles{
+    /* border: 2px solid red; */
+    width: 100%;
+    padding: 20px 20px 0px 20px;
+    display: flex;
+    gap: 20px;
+}
+
+.tile{
+    /* border: 2px solid red; */
+    padding: 40px 50px 50px 50px;
+    min-height: 400px;
+    text-align: center;
+    background-color: whitesmoke;
+}
+
+.tile1:hover{
+    animation : tile1hoverin 0.4s ease forwards;
+}
+.tile2:hover{
+    animation : tile2hoverin 0.4s ease forwards;
+}
+.tile3:hover{
+    animation : tile3hoverin 0.4s ease forwards;
+}
+@keyframes tile1hoverin {
+    to{background-color: #e4e4d4;}
+}
+@keyframes tile2hoverin {
+    to{background-color: #e4cccc;}
+}
+@keyframes tile3hoverin {
+    to{background-color: #d4d4e4;}
+}
+
+.tile img{
+    width: 125px;
+    height: auto;
+}
+
+.reviews{
+    width: 100%;
+    padding: 100px 20px 100px 20px;
+    /* border: 2px solid red; */
+    text-align: center;
+    position: relative;
+}
+
+.quotes{
+    position: absolute;
+    /* border: 2px solid red; */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80vw;
+    text-align: center;
+}
+.quote1{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    background-color: white;
+    animation: quote1 10s ease infinite ;
+}
+.quote2{
+    width: 100%;
+    text-align: center;
+    background-color: white;
+}
+
+@keyframes quote1{
+    0%{
+        opacity: 1;
+    }
+    40%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+    90%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .inforow{
+        height: 100vh;
+        flex-wrap: wrap;
+        /* border: 2px solid red; */
+    }
+    .col1,.col2{
+        width: 100%;
+        height: 40%;
+        /* border: 2px solid red; */
+    }
+    .col2{
+        min-height: 360px;
+    }
+    .servicetextbox{
+        min-height: 300px;
+        margin-top: 10px;
+        margin-left: 20px;
+        margin-right: 20px;
+        /* border: 2px solid red; */
+    }
+    .servicetextbox p{
+        margin-top: -10px;
+    }
+
+    .infotiles{
+        flex-wrap: wrap;
+    }
+    .tile{
+        padding: 0px 50px 20px 50px;
+        min-height: fit-content;
+    }
+    .reviews{
+        padding: 50px 10px 50px 10px;
+        /* border: 2px solid red; */
+        min-height: 40vh;
+    }
+    .quotes{
+        margin-top: -30px;
+        width: 90%;
+    }
+}
